@@ -1,0 +1,48 @@
+:root {
+  --black:       #000000;
+  --white:       #ffffff;
+  --gray-600:    #565656;
+  --gray-200:    #dddddd;
+  --gray-100:    #f8f8f8;
+  --gray-400:    #999999;
+
+  --blue:        #0072CE;
+  --blue-dark:   #005ba3;
+
+  --green:       #4DC14D;
+  --green-light: #edfaed;
+  --red:         #DC1919;
+  --red-light:   #fdeaea;
+
+  --radius:      0px;
+  --radius-sm:   0px;
+  --transition:  0.18s ease;
+
+  --font-display: 'Roboto Condensed', sans-serif;
+  --font-body:    'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--white);
+  color: var(--black);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: var(--font);
+  cursor: pointer;
+}
