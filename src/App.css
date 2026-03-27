@@ -386,9 +386,10 @@ body {
 
 /* RESULTS SCREEN */
 .results-screen {
-  background: var(--gray-100);
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Ccircle cx='11' cy='11' r='1.5' fill='%23000000' opacity='0.12'/%3E%3C/svg%3E"),
+    var(--gray-100);
 }
-
 .results-inner {
   max-width: 720px;
   margin: 0 auto;
@@ -406,10 +407,7 @@ body {
 }
 
 .tulem-blokk {
-  background:
-    radial-gradient(circle at 92% -10%, rgba(0,114,206,0.18) 0%, transparent 55%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Ccircle cx='11' cy='11' r='1.5' fill='white' opacity='0.18'/%3E%3C/svg%3E"),
-    var(--black);
+  background: var(--black);
   color: var(--white);
   padding: 40px;
   display: flex;
@@ -419,10 +417,6 @@ body {
   margin-bottom: 32px;
   position: relative;
   overflow: hidden;
-}
-
-.tulem-blokk::before {
-  display: none;
 }
 
 .tulem-ring {
